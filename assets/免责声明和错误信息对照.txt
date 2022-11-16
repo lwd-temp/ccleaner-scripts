@@ -1,2 +1,14 @@
 原文见“脚本许可协议”，
 简而言之，此作品不提供任何担保，您需要对自己的数据安全负责。
+
+错误信息对照：
+CCleaner.exe not found!
+没有找到CCleaner可执行文件，检查是否完整解压。
+
+First run, please run CCleaner.exe first.
+这是第一次启动，需要先手动CCleaner并在自定义清理中配置自己需要的选项。
+默认设置会清理浏览器登录状态等可能重要的信息，因此，我们不建议使用默认配置。
+事实上，我们甚至不建议使用此脚本。
+
+CCleaner is running, please close it first.
+CCleaner已经在运行，清理脚本不会在这种情况下执行。
