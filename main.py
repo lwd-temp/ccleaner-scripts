@@ -64,9 +64,9 @@ def main():
     if not os.path.exists('ccleaner/CCleaner.exe'):
         raise Exception('CCleaner.exe not found')
     # 下载winapp2.ini
-    print('Downloading winapp2.ini...')
-    r = requests.get(winapp2, allow_redirects=True)
-    open('ccleaner/Winapp2.ini', 'wb').write(r.content)
+    # print('Downloading winapp2.ini...')
+    # r = requests.get(winapp2, allow_redirects=True)
+    # open('ccleaner/Winapp2.ini', 'wb').write(r.content)
     # 复制assets内的文件到ccleaner目录
     copyFilesInFolderTo('assets', 'ccleaner')
     # 重命名ccleaner.zip为ccleaner.zip.bak

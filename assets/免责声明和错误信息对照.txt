@@ -12,3 +12,6 @@ First run, please run CCleaner.exe first.
 
 CCleaner is running, please close it first.
 CCleaner已经在运行，清理脚本不会在这种情况下执行。
+
+The Cleaning has been started.
+清理已在后台启动。

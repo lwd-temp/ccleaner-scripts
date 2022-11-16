@@ -44,7 +44,7 @@ if %errorlevel% equ 0 (
 :: Run CCleaner with AUTO mode
 echo Running CCleaner...
 start "" /wait "%~dp0CCleaner.exe" /AUTO
-echo Done.
+echo The Cleaning has been started.
 
 pause
 exit
