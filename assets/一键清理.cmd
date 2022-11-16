@@ -33,6 +33,14 @@ if %errorlevel% equ 0 (
     exit
 )
 
+:: Check CCleaner64 is running
+tasklist /fi "imagename eq CCleaner64.exe" | find /i "ccleaner64.exe" >nul
+if %errorlevel% equ 0 (
+    echo CCleaner is running, please close it first.
+    pause
+    exit
+)
+
 :: Run CCleaner with AUTO mode
 echo Running CCleaner...
 start "" /wait "%~dp0CCleaner.exe" /AUTO
