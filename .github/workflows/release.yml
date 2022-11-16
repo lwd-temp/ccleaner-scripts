@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run main.py
+        run: python main.py
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: CCleaner
+          path: ccleaner.zip
